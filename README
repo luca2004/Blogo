@@ -1,0 +1,13 @@
+Webapp mobile per il network di blog del sito Blogo.it.
+
+Specifiche:
+1 - Webapp + App android
+2 - Viste su dispositivi mobile di news - gallery - video di tutti i blog base del circuito
+3 - Per App android memorizzazione configurabilità dei blog preferiti
+
+
+
+Pages:
+  - Home: Lista dei blog con divider di sezione ad accordation
+  - Blog: Toolbar con scelta della voce [News - Gallery - Video] e lista degli item (inizialmente ultimi 10 item)
+  - Item: visualizzazione dettagliata dell'item selezionato
