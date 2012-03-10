@@ -1,0 +1,35 @@
+
+/* Customizzazione css jQM */
+.ui-li-has-thumb{
+    height: 64px;
+}
+.ui-li-has-thumb span.ui-icon-arrow-r{
+    margin-top: -17px;
+}
+.ui-li-thumb{
+     height: 64px;
+     width: 100%;
+}
+
+.ui-li-heading{
+    font-size: 12px;
+}
+
+.page_loading{
+    position:relative;
+    left: 80px;
+    top: 15px;
+}
+
+.ui-content p{
+    display: none;
+}
+
+/*Slideshow Photoswipe */
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 33.33333333%; }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: 150px; }
+.ui-content{ overflow: hidden; }
+

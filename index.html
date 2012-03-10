@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+	<title>Blogo</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    
+    <link rel='stylesheet' href='css/photoswipe.css' type='text/css' > 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" />
+    <link rel="stylesheet" href="css/plugin.jLoading.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!----------           Libraries JS Files   --------------------------------->
+	<script src="scripts/lib/klass.min.js" type="text/javascript" ></script>
+    <script src="scripts/lib/underscore.js" type="text/javascript"></script>
+	<script src="scripts/lib/jquery-1.7.1.min.js"></script>
+    <script src="scripts/lib/plugin.jLoading.js"></script>
+    <script src="scripts/lib/backbone.js" type="text/javascript"></script>
+	<script src="scripts/lib/jquery.mobile-1.0.1.js" type='text/javascript' ></script>
+    <script src='scripts/lib/code.photoswipe-3.0.4.min.js' type='text/javascript' ></script> 
+    </head> 
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>Blogo Gallery</h1>
+            </div><!-- /header -->
+            <div data-role="content"></div><!-- /content -->
+            <div data-role="footer"><h5>(c) 2012 &nbsp;&nbsp;&nbsp;  Luca Caflisch </h5></div>
+
+        </div><!-- /page -->
+        
+    </body>
+  
+    
+  <!-- Template -->  
+  <script id="blogitem-template" type="text/html">
+    <li><a href="<%= href %>"><%= name %></a></li>
+  </script> 
+  <script id="blogitem-divider-template" type="text/html">
+    <li data-role="list-divider"><%= name %></li>
+  </script>
+  <script id="content-bloglist-template" type="text/html">
+    <p><%= title %></p>	
+    <ul data-role="listview" data-inset="true" data-filter="false">
+         <%= listItems %>
+    </ul>
+  </script> 
+  <script id="bloggalleryitem-template" type="text/html">
+    <li><a id="<%= id %>" href="#thumbs-<%= id %>" data-link="<%= link %>">
+        <img src="<%= thumb %>" title=""/>
+        <h3><%= label %></h3>
+    </a>
+    </li>
+  </script>
+  
+  <script id="content-slideshow-template" type="text/html">
+        <ul class="gallery" id="gallery_wrapper">
+            <%= listItems %>
+        </ul>
+  </script>
+  <script id="slideshowitem-template" type="text/html">
+        <li>    
+        <a href="<%= baseimg %>" rel="external" class="ui-link">
+            <img src="<%= thumbimg %>" alt="<%= title %>" title="<%= title %>" />
+        </a>
+        </li>
+  </script>
+    
+  <!----------           Application Files   --------------------------------->
+  <script src="scripts/config.js" type="text/javascript"></script>
+  <script src="scripts/models/models.js"></script>
+  <script src="scripts/views/views.js"></script>
+  <script src="scripts/main.js"></script>
+    
+</html>
